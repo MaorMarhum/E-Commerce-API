@@ -9,7 +9,7 @@ const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 // cors configuration
 const corsOptions = {
-  origin: "https://e-commerce-lac-three.vercel.app",
+  origin: "https://maor-e-commerce.vercel.app",
   credentials: true,
 };
 app.use(cors(corsOptions));
