@@ -89,8 +89,8 @@ app.post("/checkout", async (req, res) => {
         payment_method_types: ["card"],
         mode: "payment",
         line_items: lineItemsReady,
-        success_url: `${process.env.FRONTEND_URL}`,
-        cancel_url: `${process.env.FRONTEND_URL}`,
+        success_url: `${process.env.FRONTEND_URL}/success`,
+        cancel_url: `${process.env.FRONTEND_URL}/cart`,
       });
 
       res.send({ url: session.url });
